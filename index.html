@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,800;0,900;1,400;1,500;1,600;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"> 
     <title>Dashboard</title>
 </head>
 
@@ -14,7 +17,7 @@
     <div class="container">
 
        <div class="sidebar">
-           <div class="logo">logo</div>
+           <img src="Escuelita.png" alt="logo" class="logo">
            <div class="menu">
                <div>
                    <img src="home.png" alt="home" class="icon"><p>Home</p></div>
@@ -27,7 +30,7 @@
                <div>
                    <img src="task.png" alt="task" class="icon"><p>Task</p></div>
                <div>
-                   <img src="community.png" alt="community" class="icon"><p>Communities</p>></div>
+                   <img src="community.png" alt="community" class="icon"><p>Communities</p></div>
            </div>
            <div class="settings">
                <div>
@@ -46,12 +49,117 @@
        </div>
 
        <div class="header">
-           <div class="search">search</div>
-           <div class="user">user</div>
+
+           <div class="search">
+                <img src="search.png" alt="search icon" class="icon">
+                <input type="text" placeholder=""></input>
+            </div>
+
+            <div class="usermenu">
+                <img src="bell.png" alt="" class="icon"><img src="profile.png" alt="user pic" class="icon">
+                <p class="name">Chato McPerez</p>
+            </div>
+
+           <div class="user">
+               <img src="profile.jpg" alt="userimg" class="userimg">
+               <div class="username">
+                   <p>Director Escuelita Romhany</p> 
+                   <h1>Istvan Romhany (@ist.rom)</h1>
+               </div>
+            </div>
+
+            <div class="btns">
+               <button class="headerbtn">New</button>
+               <button class="headerbtn">Upload</button>
+               <button class="headerbtn">Share</button>
+            </div>
        </div>
        
        <div class="content">
-           asdfghj
+            <div class="main-content">
+               <h2>Your Projects</h2>
+               <div class="cards-container">
+                   <div class="cards">
+                        <h1>Super Cool Project</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum tristique nisl in mattis. Mauris at mollis diam.</p>
+                        <div>
+                            <img src="favorite.png " alt="favorite" class="icon">
+                            <img src="watchlist.png" alt="watchlist" class="icon">
+                            <img src="share.png" alt="share" class="icon">
+                        </div>
+                    </div>
+                <div class="cards">
+                    <h1>Cool Project</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum tristique nisl in mattis. Mauris at mollis diam.</p>
+                    <div><img src="favorite.png " alt="favorite" class="icon"><img src="watchlist.png" alt="watchlist" class="icon"><img src="share.png" alt="share" class="icon"></div>
+                </div>
+                <div class="cards">
+                    <h1>Tareas de Css</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum tristique nisl in mattis. Mauris at mollis diam.</p>
+                    <div><img src="favorite.png " alt="favorite" class="icon"><img src="watchlist.png" alt="watchlist" class="icon"><img src="share.png" alt="share" class="icon"></div>
+                </div>
+                <div class="cards">
+                    <h1>Memes y queseyo</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum tristique nisl in mattis. Mauris at mollis diam.</p>
+                    <div><img src="favorite.png " alt="favorite" class="icon"><img src="watchlist.png" alt="watchlist" class="icon"><img src="share.png" alt="share" class="icon"></div>
+                </div>
+                <div class="cards">
+                    <h1>Front-End Development
+                    
+                    </h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum tristique nisl in mattis. Mauris at mollis diam.</p>
+                    <div><img src="favorite.png " alt="favorite" class="icon"><img src="watchlist.png" alt="watchlist" class="icon"><img src="share.png" alt="share" class="icon"></div>
+                </div>
+                <div class="cards">
+                    <h1>Backend Development</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum tristique nisl in mattis. Mauris at mollis diam.</p>
+                    <div><img src="favorite.png " alt="favorite" class="icon"><img src="watchlist.png" alt="watchlist" class="icon"><img src="share.png" alt="share" class="icon"></div>
+                </div>
+            </div>
+           </div>
+           <div class="announcements">
+               <h2>Announcements</h2>
+               <div class="message">
+                    <div>
+                        <h1>Site Maintenance</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum tristique nisl in mattis. Mauris at mollis diam. </p></div>
+                    <div>
+                        <h1>Community Share Day</h1>
+                        <p>Ut semper sem magna, id ultricies nisi tincidunt sit amet. Curabitur purus lacus, volutpat eget, egestas ullamcorper est. </p>
+                    </div>
+                    <div>
+                        <h1>Updated Private Policy</h1>
+                        <p>Morbi efficitur turpis id diam molestie, id dictum massa commodo. Etiam id elit at orci faucibus porta ut eu enim. </p>
+                
+                    </div>
+                </div>
+           </div>
+           <div class="trending">
+               <h2>Trending</h2>
+               <div class="trends">
+                   <div>
+                       <img src="profile1.jpg" alt="profile1" class="profilepic">
+                       <div>
+                           <h1>@jezunica</h1>
+                           <p>Jonathan Zunica</p>
+                       </div>
+                   </div>
+                   <div>
+                       <img src="profile2.jpg" alt="profile2" class="profilepic">
+                       <div>
+                           <h1>@abrilmr</h1>
+                           <p>Abril Mejia</p>
+                       </div>
+                   </div>
+                   <div>
+                       <img src="profile3.jpg" alt="profile3" class="profilepic">
+                       <div>
+                           <h1>@andreazunica</h1>
+                           <p>Andrea Zunica</p>
+                       </div>
+                   </div>
+               </div>
+           </div>
 
        </div>
     
